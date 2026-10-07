@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Dasara & Vijayadashami Invitation 2026</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        crimson: {
+                            600: '#991b1b',
+                            700: '#7f1d1d',
+                            800: '#6b0504',
+                            900: '#450a0a'
+                        },
+                        gold: {
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207'
+                        },
+                        saffron: {
+                            400: '#fb923c',
+                            500: '#f97316',
+                            600: '#ea580c'
+                        },
+                        deepbg: '#140307'
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        devanagari: ['Rozha One', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Rozha+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #140307;
+            color: #fff1f2;
+            overflow-x: hidden;
+        }
+
+        /* Gold Gradient Text */
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fff7ed 0%, #fde047 30%, #eab308 70%, #9a3412 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-border {
+            border-image: linear-gradient(to bottom right, #fde047, #ca8a04, #78350f) 1;
+        }
+
+        /* Traditional Pattern Background */
+        .mandala-bg {
+            background-image: radial-gradient(rgba(234, 179, 8, 0.15) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        /* Glassmorphism Festive Card */
+        .festive-card {
+            background: rgba(30, 7, 14, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(234, 179, 8, 0.25);
+            box-shadow: 0 10px 30px -5px rgba(153, 27, 27, 0.3);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .festive-card:hover {
+            border-color: rgba(250, 204, 21, 0.6);
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px -5px rgba(234, 179, 8, 0.3);
+        }
+
+        /* Animated Glowing Trishul Aura */
+        @keyframes auraGlow {
+            0%, 100% { filter: drop-shadow(0 0 15px rgba(250, 204, 21, 0.6)); }
+            50% { filter: drop-shadow(0 0 30px rgba(234, 88, 12, 0.9)); }
+        }
+
+        .aura-glow {
+            animation: auraGlow 3s infinite ease-in-out;
+        }
+
+        /* Canvas Overlay for Floating Petals & Sparkles */
+        #petal-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold-500 selection:text-crimson-900">
+
+    <!-- Canvas for Floating Marigold Petals & Gold Sparkles -->
+    <canvas id="petal-canvas"></canvas>
+
+    <!-- Top Banner: Sacred Sloka -->
+    <div class="bg-gradient-to-r from-crimson-900 via-crimson-800 to-crimson-900 border-b border-gold-500/30 text-center py-2.5 px-4 text-gold-300 text-xs sm:text-sm font-serif tracking-widest uppercase">
+        ✨ সর্বমঙ্গলমঙ্গল্যে শিবে সর্বার্থসাধিকে। শরণ্যে ত্র্যম্বকে গৌরি নারায়ণি নমোঽস্তু তে॥ ✨
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-40 bg-deepbg/90 backdrop-blur-md border-b border-gold-500/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <span class="text-3xl text-gold-400">🔱</span>
+                <div>
+                    <span class="font-serif font-bold text-xl tracking-wider text-gold-300 block leading-none">DASARA 2026</span>
+                    <span class="text-[10px] text-saffron-400 tracking-widest uppercase font-semibold">Vijayadashami Utsav</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-amber-100/90">
+                <a href="#about" class="hover:text-gold-400 transition-colors">Significance</a>
+                <a href="#schedule" class="hover:text-gold-400 transition-colors">Pooja Schedule</a>
+                <a href="#symbols" class="hover:text-gold-400 transition-colors">Sacred Symbols</a>
+                <a href="#venue" class="hover:text-gold-400 transition-colors">Venue & Location</a>
+                <a href="#rsvp" class="hover:text-gold-400 transition-colors">RSVP & Pass</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <button onclick="shareInvitation()" class="px-4 py-2 rounded-full border border-gold-500/40 hover:border-gold-400 bg-crimson-900/60 hover:bg-crimson-800 text-gold-300 text-xs font-semibold transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-share-nodes"></i> <span class="hidden sm:inline">Share Invitation</span>
+                </button>
+                <a href="#rsvp" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-gold-500 via-saffron-500 to-crimson-600 text-crimson-950 font-bold text-xs sm:text-sm shadow-lg shadow-gold-500/20 hover:scale-105 transition-all">
+                    Confirm RSVP
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden mandala-bg">
+        <div class="max-w-5xl mx-auto px-4 text-center relative z-20">
+            
+            <!-- Emblem/Symbol Visual -->
+            <div class="inline-flex items-center justify-center w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-crimson-900/80 border-2 border-gold-400 aura-glow mb-6 text-4xl sm:text-5xl shadow-2xl">
+                🏹
+            </div>
+
+            <!-- Festive Headline -->
+            <p class="text-saffron-400 font-serif text-sm sm:text-base tracking-widest uppercase mb-2 font-bold">Cordially Inviting You & Your Family</p>
+            <h1 class="font-serif font-extrabold text-4xl sm:text-6xl md:text-7xl tracking-wide leading-tight gold-gradient-text mb-6">
+                Grand Vijayadashami & Dasara Celebrations
+            </h1>
+
+            <p class="text-amber-100/80 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-10 font-light">
+                Celebrate the auspicious victory of Good over Evil, light over darkness, and righteousness over malice. Join us as we invoke the divine blessings of Goddess Kanaka Durga & Lord Shri Ram.
+            </p>
+
+            <!-- Key Event Meta Badges -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto mb-12">
+                <div class="p-4 rounded-2xl festive-card border-gold-500/30">
+                    <div class="text-2xl mb-1">📅</div>
+                    <div class="text-xs text-saffron-400 font-bold uppercase tracking-wider">Date</div>
+                    <div class="font-serif text-gold-300 font-bold text-base mt-0.5">Tuesday, Oct 20, 2026</div>
+                    <div class="text-[11px] text-amber-200/60">Vijayadashami / Dasara</div>
+                </div>
+
+                <div class="p-4 rounded-2xl festive-card border-gold-500/30">
+                    <div class="text-2xl mb-1">⏰</div>
+                    <div class="text-xs text-saffron-400 font-bold uppercase tracking-wider">Time</div>
+                    <div class="font-serif text-gold-300 font-bold text-base mt-0.5">08:00 AM Onwards</div>
+                    <div class="text-[11px] text-amber-200/60">Full Day Celebrations</div>
+                </div>
+
+                <div class="p-4 rounded-2xl festive-card border-gold-500/30">
+                    <div class="text-2xl mb-1">📍</div>
+                    <div class="text-xs text-saffron-400 font-bold uppercase tracking-wider">Venue</div>
+                    <div class="font-serif text-gold-300 font-bold text-base mt-0.5">Indrakeeladri Grounds</div>
+                    <div class="text-[11px] text-amber-200/60">Vijayawada, Andhra Pradesh</div>
+                </div>
+            </div>
+
+            <!-- Countdown Timer Card -->
+            <div class="max-w-2xl mx-auto festive-card rounded-3xl p-6 sm:p-8 border border-gold-500/40 relative">
+                <div class="text-xs font-bold uppercase tracking-widest text-saffron-400 mb-4">Countdown to Vijayadashami Subhakankshalu</div>
+                <div class="grid grid-cols-4 gap-3 sm:gap-6 text-center" id="countdown-box">
+                    <div class="bg-crimson-950/80 p-3 sm:p-4 rounded-2xl border border-gold-500/20">
+                        <span id="cd-days" class="font-serif font-extrabold text-2xl sm:text-4xl text-gold-300">00</span>
+                        <span class="block text-[10px] sm:text-xs text-amber-200/70 mt-1 uppercase font-medium">Days</span>
+                    </div>
+                    <div class="bg-crimson-950/80 p-3 sm:p-4 rounded-2xl border border-gold-500/20">
+                        <span id="cd-hours" class="font-serif font-extrabold text-2xl sm:text-4xl text-gold-300">00</span>
+                        <span class="block text-[10px] sm:text-xs text-amber-200/70 mt-1 uppercase font-medium">Hours</span>
+                    </div>
+                    <div class="bg-crimson-950/80 p-3 sm:p-4 rounded-2xl border border-gold-500/20">
+                        <span id="cd-mins" class="font-serif font-extrabold text-2xl sm:text-4xl text-gold-300">00</span>
+                        <span class="block text-[10px] sm:text-xs text-amber-200/70 mt-1 uppercase font-medium">Minutes</span>
+                    </div>
+                    <div class="bg-crimson-950/80 p-3 sm:p-4 rounded-2xl border border-gold-500/20">
+                        <span id="cd-secs" class="font-serif font-extrabold text-2xl sm:text-4xl text-saffron-400">00</span>
+                        <span class="block text-[10px] sm:text-xs text-amber-200/70 mt-1 uppercase font-medium">Seconds</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Significance & Message Section -->
+    <section id="about" class="py-16 bg-crimson-950/60 border-y border-gold-500/20 relative">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-4xl block mb-3">🪔</span>
+            <h2 class="font-serif font-bold text-2xl sm:text-3xl text-gold-300 mb-4">The Essence of Dasara</h2>
+            <p class="text-amber-100/80 text-sm sm:text-base leading-relaxed mb-8">
+                Dasara marks the triumphant climax of Navratri. On this holy day, Goddess Durga vanquished the demon Mahishasura after a fierce nine-day battle, and Bhagwan Shri Ram defeated Ravana in Lanka. It is a timeless symbol that righteousness (<em class="text-gold-300">Dharma</em>) will always prevail over unrighteousness (<em class="text-gold-300">Adharma</em>).
+            </p>
+
+            <!-- Shami / Jammi Leaf Gold Blessing Generator -->
+            <div class="p-6 rounded-2xl bg-gradient-to-br from-crimson-900/90 to-deepbg border border-gold-500/40 text-center max-w-xl mx-auto shadow-xl">
+                <div class="text-3xl mb-2">🍃</div>
+                <h3 class="font-serif font-bold text-lg text-gold-300 mb-1">Exchange Shami (Jammi) Gold Leaves</h3>
+                <p class="text-xs text-amber-200/70 mb-4">In traditional custom, Jammi leaves represent gold and goodwill exchanged for health, success, and prosperity.</p>
+                <button onclick="blessGoldLeaf()" class="px-5 py-2.5 rounded-full bg-gold-500 hover:bg-gold-400 text-crimson-950 font-bold text-xs tracking-wider uppercase transition-transform active:scale-95 shadow-md">
+                    ✨ Receive Divine Gold Blessing
+                </button>
+                <div id="blessing-output" class="hidden mt-4 p-3 rounded-xl bg-crimson-950/90 border border-gold-400/50 text-xs text-gold-200 font-serif italic"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sacred Festival Symbols Showcase -->
+    <section id="symbols" class="py-20 mandala-bg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold text-saffron-400 tracking-widest uppercase mb-2 block">Iconography & Meaning</span>
+                <h2 class="font-serif font-extrabold text-3xl sm:text-4xl gold-gradient-text">Sacred Symbols of Dasara</h2>
+                <p class="text-amber-200/70 text-sm mt-3">Each divine element carries deep spiritual energy and cosmic significance during Vijayadashami.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Symbol 1 -->
+                <div class="festive-card rounded-2xl p-6 text-center">
+                    <div class="w-16 h-16 rounded-full bg-crimson-900/80 border border-gold-400/50 flex items-center justify-center text-3xl mx-auto mb-4 shadow-lg">
+                        🔱
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-gold-300 mb-2">Trishula (Trident)</h3>
+                    <p class="text-xs text-amber-100/70 leading-relaxed">Represents Goddess Durga’s power over the three worlds (Triloka) and the destruction of negative desires, ego, and ignorance.</p>
+                </div>
+
+                <!-- Symbol 2 -->
+                <div class="festive-card rounded-2xl p-6 text-center">
+                    <div class="w-16 h-16 rounded-full bg-crimson-900/80 border border-gold-400/50 flex items-center justify-center text-3xl mx-auto mb-4 shadow-lg">
+                        🏹
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-gold-300 mb-2">Bow & Arrow (Dhanush)</h3>
+                    <p class="text-xs text-amber-100/70 leading-relaxed">Symbolizes Bhagwan Shri Ram's sharp focus, truth, and the decisive destruction of evil during Ravan Dahan.</p>
+                </div>
+
+                <!-- Symbol 3 -->
+                <div class="festive-card rounded-2xl p-6 text-center">
+                    <div class="w-16 h-16 rounded-full bg-crimson-900/80 border border-gold-400/50 flex items-center justify-center text-3xl mx-auto mb-4 shadow-lg">
+                        🍃
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-gold-300 mb-2">Shami / Jammi Leaves</h3>
+                    <p class="text-xs text-amber-100/70 leading-relaxed">Exchanged as symbolic gold among loved ones on Vijayadashami, signifying victory, prosperity, and lifelong peace.</p>
+                </div>
+
+                <!-- Symbol 4 -->
+                <div class="festive-card rounded-2xl p-6 text-center">
+                    <div class="w-16 h-16 rounded-full bg-crimson-900/80 border border-gold-400/50 flex items-center justify-center text-3xl mx-auto mb-4 shadow-lg">
+                        🔥
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-gold-300 mb-2">Ravan Dahan Effigy</h3>
+                    <p class="text-xs text-amber-100/70 leading-relaxed">The ceremonial burning of the 10-headed effigy symbolizing the eradication of pride, lust, anger, and evil tendencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complete Event Program / Schedule -->
+    <section id="schedule" class="py-20 bg-crimson-950/80 border-y border-gold-500/20">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold text-saffron-400 tracking-widest uppercase mb-2 block">Auspicious Timings</span>
+                <h2 class="font-serif font-extrabold text-3xl sm:text-4xl text-gold-300">Celebration Program & Rituals</h2>
+                <p class="text-amber-200/70 text-sm mt-2">Join us for sacred homam, cultural performances, and evening festivities.</p>
+            </div>
+
+            <!-- Schedule Timeline -->
+            <div class="space-y-6">
+                <!-- Item 1 -->
+                <div class="festive-card rounded-2xl p-6 border-l-4 border-l-gold-400 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-crimson-900/90 text-gold-300 flex items-center justify-center text-xl shrink-0 border border-gold-500/30">
+                            🌸
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-saffron-400 uppercase tracking-wide">07:30 AM - 09:30 AM</span>
+                            <h3 class="font-serif font-bold text-lg text-gold-200">Sri Chandi Homam & Suvasini Puja</h3>
+                            <p class="text-xs text-amber-100/70 mt-1">Sacred Vedic fire ritual invoking universal strength, protection, and harmony.</p>
+                        </div>
+                    </div>
+                    <span class="px-3 py-1 rounded-full bg-gold-500/20 text-gold-300 text-xs font-bold border border-gold-500/40 shrink-0 self-start md:self-center">
+                        Morning Ritual
+                    </span>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="festive-card rounded-2xl p-6 border-l-4 border-l-saffron-500 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-crimson-900/90 text-saffron-400 flex items-center justify-center text-xl shrink-0 border border-gold-500/30">
+                            🗡️
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-saffron-400 uppercase tracking-wide">11:00 AM - 12:30 PM</span>
+                            <h3 class="font-serif font-bold text-lg text-gold-200">Ayudha Puja & Vahana Puja</h3>
+                            <p class="text-xs text-amber-100/70 mt-1">Blessing of vehicles, tools, and professional instruments expressing gratitude for livelihoods.</p>
+                        </div>
+                    </div>
+                    <span class="px-3 py-1 rounded-full bg-saffron-500/20 text-saffron-300 text-xs font-bold border border-saffron-500/40 shrink-0 self-start md:self-center">
+                        Special Pooja
+                    </span>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="festive-card rounded-2xl p-6 border-l-4 border-l-emerald-500 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-crimson-900/90 text-emerald-400 flex items-center justify-center text-xl shrink-0 border border-gold-500/30">
+                            🍲
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-saffron-400 uppercase tracking-wide">01:00 PM - 03:00 PM</span>
+                            <h3 class="font-serif font-bold text-lg text-gold-200">Maha Prasadam & Festive Feast</h3>
+                            <p class="text-xs text-amber-100/70 mt-1">Traditional multi-course vegetarian feast served on banana leaves.</p>
+                        </div>
+                    </div>
+                    <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold border border-emerald-500/40 shrink-0 self-start md:self-center">
+                        Community Feast
+                    </span>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="festive-card rounded-2xl p-6 border-l-4 border-l-gold-400 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-crimson-900/90 text-gold-300 flex items-center justify-center text-xl shrink-0 border border-gold-500/30">
+                            💃
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-saffron-400 uppercase tracking-wide">05:00 PM - 07:00 PM</span>
+                            <h3 class="font-serif font-bold text-lg text-gold-200">Jammi Chettu Puja, Kolatam & Garba Dance</h3>
+                            <p class="text-xs text-amber-100/70 mt-1">Worship of the Shami tree followed by traditional folk music and group dancing.</p>
+                        </div>
+                    </div>
+                    <span class="px-3 py-1 rounded-full bg-gold-500/20 text-gold-300 text-xs font-bold border border-gold-500/40 shrink-0 self-start md:self-center">
+                        Cultural Evening
+                    </span>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="festive-card rounded-2xl p-6 border-l-4 border-l-crimson-600 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-crimson-900/90 text-crimson-400 flex items-center justify-center text-xl shrink-0 border border-gold-500/30">
+                            🔥
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-saffron-400 uppercase tracking-wide">07:30 PM - 09:00 PM</span>
+                            <h3 class="font-serif font-bold text-lg text-gold-200">Grand Ravan Dahan & Fireworks Show</h3>
+                            <p class="text-xs text-amber-100/70 mt-1">Ceremonial burning of 50-ft effigies accompanied by sparkling laser & light show.</p>
+                        </div>
+                    </div>
+                    <span class="px-3 py-1 rounded-full bg-crimson-600/30 text-crimson-300 text-xs font-bold border border-crimson-500/50 shrink-0 self-start md:self-center">
+                        Grand Finale
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue & Location Details -->
+    <section id="venue" class="py-20 mandala-bg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-xs font-bold text-saffron-400 tracking-widest uppercase mb-2 block">Event Location</span>
+                    <h2 class="font-serif font-extrabold text-3xl sm:text-4xl text-gold-300 mb-6">Indrakeeladri Temple Grounds</h2>
+                    <p class="text-amber-100/80 text-sm leading-relaxed mb-8">
+                        Overlooking the sacred Krishna River, Indrakeeladri in Vijayawada is world-renowned for its sublime Vijayadashami celebrations. Parking spaces, cloakrooms, and VIP seating arrangements are organized for all guests.
+                    </p>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-crimson-900/80 text-gold-400 flex items-center justify-center shrink-0 border border-gold-500/30">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-gold-200 text-sm">Full Address</h4>
+                                <p class="text-amber-200/70 text-xs mt-0.5">Indrakeeladri Hilltop Grounds, Vijayawada, Andhra Pradesh - 520001</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-crimson-900/80 text-gold-400 flex items-center justify-center shrink-0 border border-gold-500/30">
+                                <i class="fa-solid fa-shirt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-gold-200 text-sm">Dress Code</h4>
+                                <p class="text-amber-200/70 text-xs mt-0.5">Traditional Attire Recommended (Kurta/Dhoti for Men, Saree/Lehenga for Women in festive colors like Gold, Red, Yellow, Orange)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-crimson-900/80 text-gold-400 flex items-center justify-center shrink-0 border border-gold-500/30">
+                                <i class="fa-solid fa-square-parking"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-gold-200 text-sm">Parking & Transport</h4>
+                                <p class="text-amber-200/70 text-xs mt-0.5">Complimentary shuttle buses operating every 15 minutes from Railway Station & Bus Complex.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://maps.google.com" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-crimson-900 border border-gold-400 hover:bg-crimson-800 text-gold-300 font-bold text-xs tracking-wider uppercase transition-all shadow-lg">
+                        <i class="fa-solid fa-map-location-dot"></i> Open Location in Google Maps
+                    </a>
+                </div>
+
+                <!-- Stylized Venue Card / Map Visual -->
+                <div class="festive-card rounded-3xl p-6 border border-gold-500/40 relative overflow-hidden text-center">
+                    <div class="py-12 px-6 border border-gold-500/20 rounded-2xl bg-gradient-to-b from-crimson-950 to-deepbg">
+                        <span class="text-6xl block mb-4">🛕</span>
+                        <h3 class="font-serif font-bold text-2xl text-gold-300">Vijayawada Dasara Utsav</h3>
+                        <p class="text-xs text-saffron-400 mt-2 font-serif">Sri Durga Malleswara Swamy Varla Devasthanam</p>
+                        <div class="my-6 border-t border-gold-500/30 w-1/2 mx-auto"></div>
+                        <div class="text-xs text-amber-200/80 space-y-2">
+                            <p>✨ Special Teppotsavam (Swan Boat Festival) at 08:30 PM</p>
+                            <p>✨ Divine Rajarajeswari Devi Alankaram Darshanam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive RSVP & Pass Generation Section -->
+    <section id="rsvp" class="py-20 bg-crimson-950/90 border-t border-gold-500/30">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <span class="text-4xl block mb-2">💌</span>
+            <span class="text-xs font-bold text-saffron-400 tracking-widest uppercase mb-2 block">Kindly Confirm Attendance</span>
+            <h2 class="font-serif font-extrabold text-3xl sm:text-4xl gold-gradient-text mb-4">RSVP & Digital Guest Pass</h2>
+            <p class="text-amber-200/70 text-sm mb-10">Please confirm your presence so we can reserve your Mahaprasadam dining & VIP seating pass.</p>
+
+            <!-- RSVP Form -->
+            <form id="rsvp-form" onsubmit="generatePass(event)" class="festive-card rounded-3xl p-6 sm:p-10 border border-gold-500/40 text-left space-y-5">
+                <div>
+                    <label class="block text-xs font-bold text-gold-300 uppercase tracking-wider mb-2">Full Name</label>
+                    <input type="text" id="guest-name" required placeholder="e.g., Ramesh & Family" class="w-full px-4 py-3 rounded-xl bg-crimson-950/90 border border-gold-500/40 text-amber-100 text-sm focus:border-gold-300 outline-none">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div>
+                        <label class="block text-xs font-bold text-gold-300 uppercase tracking-wider mb-2">Mobile / WhatsApp Number</label>
+                        <input type="tel" id="guest-phone" required placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-xl bg-crimson-950/90 border border-gold-500/40 text-amber-100 text-sm focus:border-gold-300 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gold-300 uppercase tracking-wider mb-2">Number of Guests</label>
+                        <select id="guest-count" class="w-full px-4 py-3 rounded-xl bg-crimson-950/90 border border-gold-500/40 text-amber-100 text-sm focus:border-gold-300 outline-none">
+                            <option value="1">1 Person</option>
+                            <option value="2">2 Persons</option>
+                            <option value="3 to 4">3 - 4 Family Members</option>
+                            <option value="5+">5+ Group / Relatives</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-gold-300 uppercase tracking-wider mb-2">Attending Events</label>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-amber-100/90">
+                        <label class="flex items-center gap-2 p-3 rounded-xl bg-crimson-950/60 border border-gold-500/20 cursor-pointer">
+                            <input type="checkbox" checked class="accent-gold-500"> Morning Homam & Pooja
+                        </label>
+                        <label class="flex items-center gap-2 p-3 rounded-xl bg-crimson-950/60 border border-gold-500/20 cursor-pointer">
+                            <input type="checkbox" checked class="accent-gold-500"> Afternoon Maha Prasadam Lunch
+                        </label>
+                        <label class="flex items-center gap-2 p-3 rounded-xl bg-crimson-950/60 border border-gold-500/20 cursor-pointer">
+                            <input type="checkbox" checked class="accent-gold-500"> Evening Garba & Cultural Show
+                        </label>
+                        <label class="flex items-center gap-2 p-3 rounded-xl bg-crimson-950/60 border border-gold-500/20 cursor-pointer">
+                            <input type="checkbox" checked class="accent-gold-500"> Night Ravan Dahan Fireworks
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-gold-500 via-saffron-500 to-crimson-600 text-crimson-950 font-bold text-sm tracking-wider uppercase shadow-xl shadow-gold-500/20 hover:brightness-110 active:scale-98 transition-all mt-4">
+                    ✨ Generate VIP Festive Digital Pass
+                </button>
+            </form>
+
+            <!-- Digital Pass Result Card (Hidden by default) -->
+            <div id="pass-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
+                <div class="festive-card max-w-md w-full rounded-3xl p-6 sm:p-8 border-2 border-gold-400 text-center relative shadow-2xl">
+                    <button onclick="closePassModal()" class="absolute top-4 right-4 text-amber-300 hover:text-white text-xl">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                    <div class="w-14 h-14 rounded-full bg-gold-500/20 text-gold-300 border border-gold-400/50 flex items-center justify-center text-3xl mx-auto mb-3">
+                        🔱
+                    </div>
+
+                    <h3 class="font-serif font-extrabold text-2xl text-gold-300">VIP Dasara Guest Pass</h3>
+                    <p class="text-xs text-saffron-400">Sri Durga Malleswara Swamy Varla Devasthanam</p>
+
+                    <!-- Pass Card Component -->
+                    <div class="my-6 p-5 rounded-2xl bg-gradient-to-b from-crimson-900 to-deepbg border border-gold-500/40 text-left space-y-3 relative overflow-hidden">
+                        <div class="flex justify-between items-center border-b border-gold-500/30 pb-3">
+                            <div>
+                                <span class="text-[10px] uppercase text-saffron-400 font-bold">Pass Holder</span>
+                                <h4 id="pass-holder-name" class="font-serif font-bold text-base text-gold-200">Alex Morgan</h4>
+                            </div>
+                            <span class="px-2.5 py-1 rounded-md bg-emerald-500/20 text-emerald-300 text-[10px] font-bold border border-emerald-500/40">CONFIRMED</span>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-2 text-xs">
+                            <div>
+                                <span class="text-[10px] text-amber-200/60 block">Guests</span>
+                                <strong id="pass-guest-num" class="text-gold-300">3 Persons</strong>
+                            </div>
+                            <div>
+                                <span class="text-[10px] text-amber-200/60 block">Pass Code</span>
+                                <strong id="pass-code" class="text-saffron-300 font-mono">DSR-98210</strong>
+                            </div>
+                        </div>
+
+                        <!-- Simulated QR Code -->
+                        <div class="pt-3 flex justify-center">
+                            <div class="bg-white p-3 rounded-xl shadow-inner">
+                                <i class="fa-solid fa-qrcode text-7xl text-crimson-950"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="window.print()" class="w-full py-3 rounded-xl bg-gold-500 text-crimson-950 font-bold text-xs uppercase tracking-wider hover:bg-gold-400 transition-colors">
+                        <i class="fa-solid fa-print mr-1"></i> Print / Save Pass
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-deepbg border-t border-gold-500/30 text-center text-xs text-amber-200/60 font-serif">
+        <div class="max-w-4xl mx-auto px-4 space-y-4">
+            <div class="text-2xl text-gold-400">🏹 🔱 🪔</div>
+            <p class="text-gold-300 font-bold text-sm">Organized with Devotion & Honor</p>
+            <p>For Event Inquiries & Seating Assistance: +91 98765 43210 | Vijayawada Dasara Committee</p>
+            <p class="text-[10px] text-amber-200/40 pt-4">May the divine Durga Bhavani bestow peace, health, and eternal happiness upon you!</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 px-5 py-3 rounded-2xl festive-card border border-gold-400 text-gold-200 text-xs shadow-2xl flex items-center gap-3 transition-all duration-300 transform translate-y-20 opacity-0 pointer-events-none">
+        <span class="text-xl">✨</span>
+        <span id="toast-text">Notification message</span>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Countdown Timer to Vijayadashami
+        function initCountdown() {
+            const targetDate = new Date("October 20, 2026 08:00:00").getTime();
+
+            function update() {
+                const now = new Date().getTime();
+                const diff = targetDate - now;
+
+                if (diff <= 0) {
+                    document.getElementById('countdown-box').innerHTML = "<div class='col-span-4 text-gold-300 font-serif text-xl font-bold'>✨ Happy Vijayadashami! Celebrations Live Now! ✨</div>";
+                    return;
+                }
+
+                const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const s = Math.floor((diff % (1000 * 60)) / 1000);
+
+                document.getElementById('cd-days').innerText = String(d).padStart(2, '0');
+                document.getElementById('cd-hours').innerText = String(h).padStart(2, '0');
+                document.getElementById('cd-mins').innerText = String(m).padStart(2, '0');
+                document.getElementById('cd-secs').innerText = String(s).padStart(2, '0');
+            }
+            update();
+            setInterval(update, 1000);
+        }
+
+        // Shami Gold Leaf Blessings Generator
+        const blessingsList = [
+            "🍃 'Ayur Arogya Soubhagya': May Goddess Durga grant you radiant health and eternal joy!",
+            "🍃 'Vijayobhava': May every task you undertake conclude with supreme triumph and happiness!",
+            "🍃 'Dhana Dhanya Sampada': May your house be filled with abundance, sweet festive spirit, and laughter!",
+            "🍃 'Dharma Rakshita': May truth and wisdom guide you and your family through all seasons!"
+        ];
+
+        function blessGoldLeaf() {
+            const index = Math.floor(Math.random() * blessingsList.length);
+            const box = document.getElementById('blessing-output');
+            box.innerText = blessingsList[index];
+            box.classList.remove('hidden');
+            showToast("Gold Leaf Blessing Received!");
+        }
+
+        // RSVP Form & Pass Generator
+        function generatePass(e) {
+            e.preventDefault();
+            const name = document.getElementById('guest-name').value;
+            const count = document.getElementById('guest-count').value;
+            const randomCode = "DSR-" + Math.floor(10000 + Math.random() * 90000);
+
+            document.getElementById('pass-holder-name').innerText = name;
+            document.getElementById('pass-guest-num').innerText = count + " Person(s)";
+            document.getElementById('pass-code').innerText = randomCode;
+
+            document.getElementById('pass-modal').classList.remove('hidden');
+            showToast("VIP Pass Successfully Generated!");
+        }
+
+        function closePassModal() {
+            document.getElementById('pass-modal').classList.add('hidden');
+        }
+
+        // Share Invitation Function
+        function shareInvitation() {
+            const shareData = {
+                title: 'Grand Vijayadashami & Dasara Invitation 2026',
+                text: '🪔 You are cordially invited to the Grand Vijayadashami & Dasara Celebrations on Oct 20, 2026 at Indrakeeladri Grounds, Vijayawada!',
+                url: window.location.href
+            };
+
+            if (navigator.share) {
+                navigator.share(shareData).catch(() => {});
+            } else {
+                navigator.clipboard.writeText(shareData.text + " " + shareData.url);
+                showToast("Invitation link copied to clipboard!");
+            }
+        }
+
+        // Toast Helper
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-text').innerText = msg;
+            toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+            }, 3000);
+        }
+
+        // Canvas Particle Effect: Falling Marigold Petals & Gold Sparkles
+        function initPetalCanvas() {
+            const canvas = document.getElementById('petal-canvas');
+            const ctx = canvas.getContext('2d');
+            let w = canvas.width = window.innerWidth;
+            let h = canvas.height = window.innerHeight;
+
+            window.addEventListener('resize', () => {
+                w = canvas.width = window.innerWidth;
+                h = canvas.height = window.innerHeight;
+            });
+
+            const petals = Array.from({ length: 30 }, () => ({
+                x: Math.random() * w,
+                y: Math.random() * h,
+                r: Math.random() * 5 + 3,
+                d: Math.random() * 1 + 0.5,
+                color: Math.random() > 0.5 ? '#f97316' : '#eab308',
+                tilt: Math.random() * 10,
+                tiltAngle: Math.random() * 0.05
+            }));
+
+            function draw() {
+                ctx.clearRect(0, 0, w, h);
+                petals.forEach(p => {
+                    ctx.beginPath();
+                    ctx.lineWidth = p.r;
+                    ctx.strokeStyle = p.color;
+                    ctx.moveTo(p.x + p.tilt + p.r / 2, p.y);
+                    ctx.lineTo(p.x + p.tilt, p.y + p.tilt + p.r / 2);
+                    ctx.stroke();
+
+                    p.y += p.d;
+                    p.tiltAngle += 0.02;
+                    p.tilt = Math.sin(p.tiltAngle) * 15;
+
+                    if (p.y > h) {
+                        p.x = Math.random() * w;
+                        p.y = -10;
+                    }
+                });
+                requestAnimationFrame(draw);
+            }
+            draw();
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            initCountdown();
+            initPetalCanvas();
+        });
+    </script>
+</body>
+</html>
